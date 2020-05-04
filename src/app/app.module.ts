@@ -8,6 +8,17 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+import { from } from 'rxjs';
+
+
+
+import {AdminModule} from './admin/admin.module';
+import {AuthModule} from './auth/auth.module';
+import {CoursesModule} from './courses/courses.module';
+import {StaticpagesModule} from './staticpages/staticpages.module';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +29,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
+    AdminModule,
+    AuthModule,
+    CoursesModule,
+    StaticpagesModule,
     AppRoutingModule
   ],
   providers: [],
