@@ -13,7 +13,7 @@ import { CourseCategoriesComponent } from './course-categories/course-categories
   declarations: [CourseFeaturedComponent, CourseListComponent, CourseDetailComponent, CourseRecentComponent, CourseCategoriesComponent],
   imports: [
     CommonModule,
-    CoursesRoutingModule
+    CoursesRoutingModule,
   ],
   exports:[CourseFeaturedComponent]
 })
