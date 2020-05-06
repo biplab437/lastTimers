@@ -3,7 +3,7 @@ import { HttpClient,HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Employee} from './employee';
 
-import {LoginComponent} from './login/loginemployee';
+import {Loginemployee} from './login/loginemployee';
 
 
 @Injectable({
@@ -15,7 +15,7 @@ url='http://localhost:54868/'
   createemployee(employee:Employee):Observable<Employee>{
     return this.http.post<Employee>(this.url+'api/Employeemasters',employee)
   }
-  loginemployee(loginEmployee: LoginComponent): Observable<any> {
+  loginemployee(loginEmployee: Loginemployee): Observable<any> {
     return this.http.post(this.url + 'api/Login', loginEmployee)
   }
 }
